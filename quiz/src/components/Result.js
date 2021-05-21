@@ -25,14 +25,13 @@ export default function Result() {
 
     return (
         <div>
-            <Card>
-                <Card.Header as="h5">Quiz</Card.Header>
-                <Card.Body>
+           
+                
+                
                     <h1>Total Score is {sum}</h1>
                     {resultBody}
-                </Card.Body>
-                <Card.Footer> Total Questions: {currQues}/5</Card.Footer>
-            </Card>
+                
+            
 
 
 

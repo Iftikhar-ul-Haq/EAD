@@ -4,6 +4,7 @@ import Options from "./Options"
 import { dataProvider } from "../App"
 import { currIndexProvider } from "../App"
 import { CountdownCircleTimer } from 'react-countdown-circle-timer'
+import Result from "./Result"
 
 
 export default function Cardbody() {
@@ -40,32 +41,14 @@ export default function Cardbody() {
 
     }
 
-    // function timer() {
-
-    //     return (<CountdownCircleTimer
-    //         isPlaying
-    //         duration={5}
-    //         size={90}
-    //         onComplete={() => Next()}
-
-    //         colors={[
-    //             ['#004777', 0.33],
-    //             ['#F7B801', 0.33],
-    //             ['#A30000', 0.33],
-    //         ]}
-
-    //     >
-    //         {({ remainingTime }) => remainingTime}
-    //     </CountdownCircleTimer>)
-
-    // }
-
-
-
-
+    
+if(currQues<4)
+{
     return (
+        
+        
         <div >
-
+        
 
             <Card.Title>{currQues + 1}. {questions[currQues].question}
 
@@ -83,5 +66,14 @@ export default function Cardbody() {
 
 
         </div>
+    
+    
+
     )
+}
+else{
+    return(
+        <Result/>
+    );
+}
 }
