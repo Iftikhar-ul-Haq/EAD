@@ -51,7 +51,7 @@ function App() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Link to="/components/Body" style={{ fontSize: "20px", textDecoration: "none", padding: "5px" }}>Body</Link>
+              <Link to="/" style={{ fontSize: "20px", textDecoration: "none", padding: "5px" }}>Body</Link>
               <Link to="/components/Cart" style={{ fontSize: "20px", textDecoration: "none", padding: "5px" }}>Cart</Link>
               <Link to="/components/Contactus" style={{ fontSize: "20px", textDecoration: "none", padding: "5px" }}>Contact Us</Link>
             </Nav>
@@ -61,12 +61,9 @@ function App() {
 
         <Switch>
 
-          <Route exact path="/">
-            <div>
-            </div>
-          </Route>
 
-          <Route path="/components/Body">
+
+          <Route path="/">
             <div className="row">
               <contextdata.Provider value={addItem}>
                 <Body data={data} />
